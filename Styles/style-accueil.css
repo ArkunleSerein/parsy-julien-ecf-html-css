@@ -1,0 +1,155 @@
+/* Contenu principal */
+.titre {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titre>div {
+    flex: 1;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.image {
+    height: 30vw;
+    display: block;
+    margin: 100px auto;
+    max-width: 80%;
+}
+
+/* Section nos services */
+
+.section_service,
+.section_apropos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section_service>div,
+.section_apropos>div {
+    flex: 1;
+    width: 48%;
+    box-sizing: border-box;
+    max-width: 80%;
+}
+
+ul {
+    padding: 0;
+}
+
+.imageservice>.image {
+    filter: drop-shadow(4px 4px 7px);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Section à propos */
+
+.para_apropos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.ligneverticale {
+    border-right: 5px solid #ccc;
+    padding-right: 50px
+}
+.video video {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+/* Media queries */
+@media screen and (max-width: 767px) {
+
+
+    /* Taille de la police pour les petits écrans */
+    .paragraph,
+    li {
+        font-size: 4vw;
+    }
+
+    /* Pour les éléments .titre, .section_service et .section_apropos */
+    .titre>div,
+    .section_service>div,
+    .section_apropos>div {
+        width: 100%;
+        padding: 20px;  
+        margin: 0 0px;
+    }
+
+    .titre,
+    .section_service,
+    .section_apropos {
+        width: 100%;
+        padding: 20px;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    /* Pour les images dans les sections */
+    .image,
+    .imageservice>.image,
+    iframe {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Pour la classe .ligneverticale */
+    .ligneverticale {
+        border-right: none;
+        border-bottom: 5px solid #ccc;
+        padding-right: none;
+        padding: 20px;
+    }
+
+    .video {
+        padding: 5px;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /* Pour les éléments .titre, .section_service et .section_apropos */
+    .titre>div,
+    .section_service>div,
+    .section_apropos>div {
+        width: 100%;
+    }
+
+    .titre,
+    .section_service,
+    .section_apropos {
+        flex-direction: column;
+    }
+
+    /* Pour les images dans les sections et la map */
+    .image {
+        width: 80%;
+        height: auto;
+    }
+
+    .imageservice,
+    .section_service>div {
+        padding: 10px;
+        height: auto;
+    }
+
+    /* Pour la vidéo dans la section à propos */
+    .para_apropos>.video {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Autres styles spécifiques si nécessaire */
+}

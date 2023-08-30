@@ -1,0 +1,122 @@
+/* Contenu principal */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services>div {
+    flex: 1;
+    width: 48%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+
+
+/* Style des images */
+
+.image-container {
+    position: relative;
+    height: 20vw;
+    /* Ajustez la hauteur selon vos besoins */
+}
+
+.image {
+    height: 80%;
+    position: absolute;
+    top: 0;
+}
+
+/* Ajustez les positions des images selon vos besoins */
+.image:nth-child(1) {
+    left: 30%;
+}
+
+.image:nth-child(2) {
+    left: 33%;
+    top: 20%;
+}
+
+.image:nth-child(3) {
+    left: 45%;
+}
+
+.grilleArticles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+/* mise en page des articles */
+.article {
+    background: linear-gradient(245.59deg, #190061, #240090);
+    margin: 20px;
+    padding: 10px;
+    flex-basis: 30%;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    >p {
+        background: transparent;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .grilleArticles {
+        flex-direction: column;
+        
+
+    }
+
+    article {
+        flex-basis: 100%;
+    }
+
+
+    /* Taille de la police pour les petits écrans */
+    .paragraph{
+        font-size: 4vw;
+    }
+
+    /* Pour les éléments .titre, .section_service et .section_apropos */
+    .services>div,
+    .content>div
+    .image-container {
+        width: 100%;
+        padding: 20px;
+        margin: 0 0px;
+    }
+
+    .services,
+    .content,
+    .image-container {
+        width: 100%;
+        padding: 20px;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    .service-icon{
+        font-size: 1px;
+    }
+
+    /* Pour les images dans les sections */
+    .image,
+    .imageservice>.image,
+    iframe {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+
+    /* Autres styles spécifiques si nécessaire */
+}
