@@ -13,8 +13,6 @@
     box-sizing: border-box;
 }
 
-
-
 /* Style des images */
 
 .image-container {
@@ -70,8 +68,14 @@
 @media screen and (max-width: 768px) {
     .grilleArticles {
         flex-direction: column;
-        
 
+
+    }
+
+    .service-icon {
+        width: 25vw;
+        margin: 0;
+        max-width: 100%;
     }
 
     article {
@@ -80,40 +84,30 @@
 
 
     /* Taille de la police pour les petits écrans */
-    .paragraph{
+    .paragraph {
         font-size: 4vw;
     }
 
     /* Pour les éléments .titre, .section_service et .section_apropos */
     .services>div,
-    .content>div
-    .image-container {
+    .content>div {
         width: 100%;
-        padding: 20px;
         margin: 0 0px;
     }
 
     .services,
-    .content,
-    .image-container {
+    .content{
         width: 100%;
-        padding: 20px;
         flex-direction: column;
         box-sizing: border-box;
     }
-    .service-icon{
-        font-size: 1px;
-    }
 
-    /* Pour les images dans les sections */
-    .image,
-    .imageservice>.image,
-    iframe {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
+    .image-container {
+        display: none;
     }
 }
+
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
 

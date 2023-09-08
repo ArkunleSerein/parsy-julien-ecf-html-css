@@ -62,9 +62,8 @@ ul {
     padding-right: 50px
 }
 .video video {
-    max-width: 100%;
-    height: auto;
-    margin-right: 20px;
+    max-width: 80%;
+    margin-bottom: 20px;
 }
 
 /* Media queries */
@@ -97,8 +96,7 @@ ul {
 
     /* Pour les images dans les sections */
     .image,
-    .imageservice>.image,
-    iframe {
+    .imageservice>.image{
         width: 100%;
         max-width: 100%;
         height: auto;
@@ -114,6 +112,9 @@ ul {
 
     .video {
         padding: 5px;
+    }
+    .btn-services {
+        padding: 50px;
     }
 }
 
@@ -150,6 +151,10 @@ ul {
         width: 100%;
         max-width: 100%;
     }
+    .btn-services {
+        padding: 50px;
+    }
+
 
     /* Autres styles spécifiques si nécessaire */
 }
